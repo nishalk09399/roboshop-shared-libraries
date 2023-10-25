@@ -8,7 +8,7 @@ def decidePipeline(Map configMap){
             echo "application is node JS VM based"
             //nodeJSVMCI(configMap)
             break
-        case 'JavaVM'
+        case 'JavaVM':
             echo "application is JAVA VM based"
             //javaVMCI(configMap)
             break
