@@ -83,7 +83,7 @@ def call(Map configMap){
                 steps {
                     echo "Deployment"
 
-                    build job: "jenk-robo-catalogue-deploy/", wait: true
+                    build job: "../jenk-robo-catalogue-deploy/", wait: true
                 }
             }
             
