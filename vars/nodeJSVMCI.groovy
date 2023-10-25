@@ -82,9 +82,7 @@ def call(Map configMap){
             stage('Deploy') {
                 steps {
                     echo "Deployment"
-                    def params = [
-                        string(name: 'version', value: "$packageVersion")
-                    ]
+
                     build job: "jenk-robo-catalogue-deploy/", wait: true
                 }
             }
